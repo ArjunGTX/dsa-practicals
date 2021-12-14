@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include<conio.h>
 int main() {
     int arr[10][10],i,j,rows,cols,num,flag = 0;
+    clrscr();
     printf("Enter number of rows\n");
     scanf("%d",&rows);
     printf("Enter number of columns\n");
@@ -32,5 +34,6 @@ int main() {
     if(!flag) {
         printf("\n%d is not found in the array",num);
     }
+    getch();
     return 0;
 }
