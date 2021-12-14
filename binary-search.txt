@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include<conio.h>
 void binary_search();
 int a[50], n, item, loc, beg, mid, end, i;
 main()
 {
+    clrscr();
     printf("\nEnter size of an array: ");
     scanf("%d", &n);
     printf("\nEnter elements of an array in sorted form:\n");
