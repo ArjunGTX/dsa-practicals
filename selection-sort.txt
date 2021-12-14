@@ -1,6 +1,9 @@
+#include <stdio.h>
+#include <conio.h>
 int main()
 {
 int array[100], n,i;
+clrscr();
 printf("Enter number of elements\n");
 scanf("%d", &n);
 printf("Enter %d Number\n", n);
@@ -35,4 +38,6 @@ array[position]=swap;
 printf("\nSorted Array is \n");
 for(i = 0; i < n; i++)
 printf(" %d ", array[i]);
+getch();
+return 0;
 }
