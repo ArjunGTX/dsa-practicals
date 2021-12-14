@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include<conio.h>
 int main() {
     int i,j,l1,l2,count,pos;
     char a[50],b[20];
-  
+    clrscr();
     printf("Enter a string \n");
     gets(a);
     printf("Enter a sub string \n");
@@ -34,5 +35,6 @@ int main() {
             }
         }
     }
+    getch();
     return 0;
 }
