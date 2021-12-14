@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include<conio.h>
 int main() {
     int a[20],b[20],c[40],i,j,la,lb;
+    clrscr();
     printf("Enter size of first array : ");
     scanf("%d",&la);
     printf("enter the elements of first array \n");
@@ -33,5 +35,6 @@ int main() {
     for(i=0; i<la+lb; i++) {
         printf(" %d ",c[i]);
     }
+    getch();
     return 0;
 }
