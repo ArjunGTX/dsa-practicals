@@ -1,4 +1,5 @@
-#include <stdio.h>  
+#include <stdio.h> 
+#include<conio.h>
 void insert(int a[], int n)
 {  
     int i, j, temp;  
@@ -16,6 +17,7 @@ void insert(int a[], int n)
 int main()  
 {  
     int a[100],i,n;
+    clrscr();
     printf("enter number of elements in array : ");
     scanf("%d",&n);
     printf("\nEnter the elements \n");
@@ -28,6 +30,7 @@ int main()
     insert(a, n);  
     printf("\nAfter sorting array elements are - \n");    
      for (i = 0; i < n; i++)  
-        printf(" %d ", a[i]);  
+        printf(" %d ", a[i]); 
+    getch();
     return 0;  
 } 
