@@ -9,8 +9,8 @@ int main() {
     int choice = 0;
     printf("Enter the number of elements in stack : ");
     scanf("%d",&n);
-    do {
-        printf("choose one of the options\n");
+    while(choice != 4){
+        printf("\n\nchoose one of the options\n");
         printf("1. push\n2. pop\n3. display\n4. exit");
         printf("\nEnter your choice : ");
         scanf("%d",&choice);
@@ -25,14 +25,12 @@ int main() {
                 display();
                 break;
             case 4:
-                exit(64);
+                exit(1);
                 break;
             default:
                 printf("Enter a valid choice\n");
         }
-        printf("Do you want to continue?");
-        ch = getch();
-    } while (ch == "y" || ch == "Y");
+    }
 }
     void push() {
         int val;
@@ -49,6 +47,7 @@ int main() {
         if(top == -1) {
             printf("stack is empty");
         } else {
+            printf("the popped element is %d",stack[top]);
             top--;
         }
     }
@@ -58,7 +57,7 @@ int main() {
             printf("\nthe stack is empty");
         } else {
            for(i=top; i>=0; i--) {
-            printf("\n%d",stack[i]);
+            printf(" %d ",stack[i]);
            }
         }
     }
