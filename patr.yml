@@ -1,0 +1,9 @@
+version: v0
+kind: Pipeline
+name: Default
+services: []
+steps:
+  - name: New Node
+    image: node
+    commands:
+      - npm test
